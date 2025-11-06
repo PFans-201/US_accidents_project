@@ -1,0 +1,110 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+ENV/
+env.bak/
+venv.bak/
+*venv/
+*env/
+
+# Data files (large files)
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.gz
+*.csv
+*.parquet
+*.feather
+
+# But keep the processed small samples
+!data/processed/**/US_Accidents_preProcessed_sample.csv
+!data/processed/**/small_*.csv
+!data/processed/**/sample_*.parquet
+!data/processed/**/sample_*.feather
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data files (exclude raw and processed data from version control)
+data/raw/**/*
+data/processed/**/*
+data/integrated/**/*
+!data/**/.gitkeep
+
+# Model artifacts
+*.pkl
+*.joblib
+*.h5
+*.pth
+models/saved_models/
+models/*.pkl
+models/*.h5
+models/*.pth
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.pdf
+!paper/final.pdf
+
+# OS
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+
