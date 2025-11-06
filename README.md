@@ -113,18 +113,6 @@ us-accidents-road-quality/
 - Git
 - (Recommended) Virtual environment tool
 
-### System Dependencies
-Install spatial indexing library:
-```bash
-# Ubuntu/Debian
-sudo apt-get install libspatialindex-dev
-
-# macOS
-brew install spatialindex
-
-# Windows
-# Download from: https://github.com/libspatialindex/libspatialindex/releases
-```
 
 ### Python Environment Setup
 
@@ -136,8 +124,8 @@ cd us-accidents-road-quality
 
 2. **Create virtual environment**:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python -m venv DS_venv
+source DS_venv/bin/activate  # On Windows: DS_venv\Scripts\activate
 ```
 
 3. **Install dependencies**:
