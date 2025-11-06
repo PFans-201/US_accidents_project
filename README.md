@@ -118,7 +118,7 @@ us-accidents-road-quality/
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/yourusername/us-accidents-road-quality.git
+git clone https://github.com/PFans-201/US_accidents_project.git
 cd us-accidents-road-quality
 ```
 
@@ -183,22 +183,8 @@ data/raw/accidents_raw/US_Accidents_March23.csv
 ```
 
 ### 2. Run Jupyter Notebooks
-```bash
-make notebooks
-# Navigate to: http://localhost:8888
-```
 
 Start with `00_data_exploration.ipynb` and proceed sequentially.
-
-### 3. Run Full Pipeline
-```bash
-make run-pipeline
-```
-
-### 4. Run Tests
-```bash
-make test
-```
 
 ## 💻 Usage
 
@@ -312,20 +298,6 @@ make test-cov
 pytest tests/test_spatial_join.py -v
 ```
 
-## 🎨 Code Quality
-
-Format and lint code:
-```bash
-# Auto-format with Black
-make format
-
-# Run linters
-make lint
-
-# Type checking
-make type-check
-```
-
 ## 📚 Documentation
 
 Detailed documentation is available in the `docs/` directory:
@@ -344,6 +316,64 @@ We welcome contributions! Please see our [Contributing Guidelines](.github/CONTR
 3. Commit changes: `[STEP-3] Your commit message`
 4. Push to your fork
 5. Submit a pull request
+
+### Branch Strategy
+- `main` - Stable production code
+- `develop` - Integration branch
+- `feature/*` - Feature branches for each notebook/component
+
+### Quick Reference Commands
+
+```bash
+# Check current branch
+git branch
+
+# See status
+git status
+
+# See commit history
+git log --oneline --graph --all
+
+# Switch branches
+git checkout <branch-name>
+
+# Create and switch to new branch
+git checkout -b <new-branch-name>
+
+# Push current branch
+git push origin <branch-name>
+
+# Pull latest changes
+git pull origin develop
+
+# Merge develop into your feature branch
+git checkout feature/your-feature
+git merge develop
+```
+
+### Commit Message Convention
+Use this format for clear commit history:
+
+```bash
+# Feature additions
+git commit -m "feat: Add spatial join functionality"
+
+# Bug fixes
+git commit -m "fix: Resolve GeoPackage serialization error"
+
+# Documentation
+git commit -m "docs: Update README with setup instructions"
+
+# Refactoring
+git commit -m "refactor: Optimize memory usage in data loading"
+
+# Performance improvements
+git commit -m "perf: Improve spatial join speed with spatial indexing"
+
+# Notebook updates
+git commit -m "notebook: Complete EDA in notebook 05"
+```
+
 
 ### Coding Standards
 - Follow PEP 8
