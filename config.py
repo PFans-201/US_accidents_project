@@ -15,7 +15,7 @@ class Config:
     
     # ==================== Paths ====================
     # Base directories
-    BASE_DIR = Path(__file__).parent.parent
+    BASE_DIR = Path(__file__).parent
     DATA_DIR = BASE_DIR / "data"
     
     # Raw data
@@ -43,6 +43,3 @@ class Config:
     # Matplotlib style
     PLOT_STYLE = "seaborn-v0_8-darkgrid"
 
-
-# Create directories on module import
-Config.create_directories()
