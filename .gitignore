@@ -61,10 +61,8 @@ data/raw/*.gz
 .DS_Store
 
 # Data files (exclude raw and processed data from version control)
-data/raw/**/*
-data/processed/**/*
-data/integrated/**/*
-!data/**/.gitkeep
+data/*
+!**/.gitkeep
 
 # Model artifacts
 *.pkl
