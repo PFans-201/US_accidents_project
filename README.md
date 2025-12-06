@@ -3,8 +3,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> Project for analyzing and predicting the likelihood that an individual involved in a fatal car accident was impaired in any way by substances that alter driving ability
-
+> This project analyzes the **Fatal Accident Reporting System (FARS)** dataset to **model and predict** the factors contributing to **fatal traffic accidents involving alcohol and/or drug impairment**. The pipeline employs a sophisticated feature engineering strategy, including Gaussian Mixture Models (GMM) for age grouping, WOE encoding for categorical data, and a multi-stage feature selection process (Lasso regression and Bayesian Structure Learning) to identify the minimal set of highly predictive variables for impairment risk. The ultimate goal is to build the following predictive models to estimate the > This project analyzes the **Fatal Accident Reporting System (FARS)** dataset to **model and predict** the factors contributing to **fatal traffic accidents involving alcohol and/or drug impairment**. The pipeline employs a sophisticated feature engineering strategy, including Gaussian Mixture Models (GMM) for age grouping, WOE encoding for categorical data, and a multi-stage feature selection process (Lasso regression and Bayesian Structure Learning) to identify the minimal set of highly predictive variables for impairment risk. The ultimate goal is to build the following predictive models to estimate the probability of this susbtance involvment in said fatalities: Logistic Regression model as our explainable and interpretable model; and a Randmom Forest model as our black-box, possibly more accurate model.
 ## 📋 Table of Contents
 - [Project Overview](#project-overview)
 - [Datasets](#datasets)
