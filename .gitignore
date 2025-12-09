@@ -60,11 +60,10 @@ data/raw/*.gz
 *~
 .DS_Store
 
-# Data files (exclude raw and processed data from version control)
-data/raw/fars/*
-data/processed/fars/*
 # Maintain data directory structure
 !**/.gitkeep
+# Data files (exclude raw and processed data from version control)
+*.csv
 
 # Model artifacts
 *.pkl
