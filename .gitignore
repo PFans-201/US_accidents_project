@@ -31,18 +31,8 @@ venv.bak/
 *env/
 
 # Data files (large files)
-data/raw/*.csv
-data/raw/*.zip
-data/raw/*.gz
-*.csv
-*.parquet
-*.feather
-
-# But keep the processed small samples
-!data/processed/**/US_Accidents_preProcessed_sample.csv
-!data/processed/**/small_*.csv
-!data/processed/**/sample_*.parquet
-!data/processed/**/sample_*.feather
+data/raw/
+data/interim/*.csv
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -62,18 +52,6 @@ data/raw/*.gz
 
 # Maintain data directory structure
 !**/.gitkeep
-# Data files (exclude raw and processed data from version control)
-*.csv
-
-# Model artifacts
-*.pkl
-*.joblib
-*.h5
-*.pth
-models/saved_models/
-models/*.pkl
-models/*.h5
-models/*.pth
 
 # Logs
 *.log
