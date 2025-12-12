@@ -23,18 +23,13 @@ This project combines multiple datasets from the Fatality Analysis Reporting Sys
 
 ### Key Objectives
 - Combine the desired information from the above datasets into one dataset
-- Analyze the dataset to determine the most important uncorrelated variables
-- Train a predictive model to predict when it is likely that a driver/other individual involved in an accident is likely to be under the influence of illicit/controlled substances
+- Analyze the dataset to determine the most important variables
+- Train a predictive model to predict when it is likely that a driver/other individual involved in an accident is under the influence of drugs and/or alcohol
 
 ## 📊 Datasets
 
-### Primary source: FARS (2023)
+### Primary source: FARS (eg.: 2023)
 - **Source**: [FARS 2023](https://static.nhtsa.gov/nhtsa/downloads/FARS/2023/National/FARS2023NationalCSV.zip)
-
-**Dataset sizes**:
-- **Accidents**: ~37500 records 
-- **Persons**: ~92500 records 
-- **Drug test data**: ~130000 records 
 
 ## 🚀 Installation
 
@@ -62,7 +57,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 4. **Download the FARS datasets**:
-Download the FARS datasets zip file from the above source, unzip it, and place **accident.csv**, **drugs.csv**, and **person.csv** in **data/raw/fars**
+Download the FARS datasets zip file from the above source, unzip it, and place **accident.csv**, **drugs.csv**, and **person.csv** in **data/raw/**
 
 ## ⚡ Quick Start
 
@@ -77,33 +72,6 @@ Download the FARS datasets zip file from the above source, unzip it, and place *
 3. Commit changes with a descriptive commit message, and push
 4. Submit a pull request
 
-### Coding Standards
-- Follow PEP 8
-- Add type hints
-- Use descriptive variable names
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-For questions or collaboration inquiries, please open an issue or contact the project maintainers.
-
-## 🗺️ Roadmap
-
-- [x] Project structure setup
-- [ ] Step 1: Data loading implementation
-- [ ] Step 2: OSM data acquisition
-- [ ] Step 3: Spatial join operation
-- [ ] Step 4: Data cleaning
-- [ ] Step 5: Feature engineering
-- [ ] Step 6: Exploratory data analysis
-- [ ] Step 7: Model development
-- [ ] Step 8: Model interpretation
-- [ ] Step 9: Research paper completion
-- [ ] Final presentation
-
----
-
-**Note**: This is an academic research project for educational purposes. Results and insights are exploratory and should not be used as the sole basis for policy or infrastructure decisions.
