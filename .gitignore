@@ -72,9 +72,6 @@ htmlcov/
 *.toc
 *.synctex.gz
 *.fdb_latexmk
-*.fls
-*.pdf
-!paper/final.pdf
 
 # OS
 Thumbs.db
