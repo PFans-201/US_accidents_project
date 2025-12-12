@@ -54,7 +54,6 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 3. **Install dependencies**:
 ```bash
 pip install -r requirements.txt
-pip install -e .
 ```
 4. **Download the FARS datasets**:
 Download the FARS datasets zip file from the above source, unzip it, and place **accident.csv**, **drugs.csv**, and **person.csv** in **data/raw/**
